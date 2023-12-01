@@ -23,7 +23,7 @@ print(decode("YMABQILB", "deux"))
 
 
 def brute_force(unknow):
-    for n in range(3, 5):  # On ne considere que les cles ayant au moins 4 caracteres
+    for n in range(3, 6):  # On ne considere que les cles ayant au moins 4 caracteres
 
         with open("liste_de_mots_francais.txt", encoding="utf-8") as file:  # On stocke les mots francais dans le set "words"
             words = set(line.strip() for line in file)
